@@ -68,16 +68,11 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(){
-  let inning = Math.random;
-  if (Math.random <= .33){
-    return 0
-  } else if (Math.random <= .66) {
-    return 1
-  } else {
-    return 2
-  }
+function inning() {
+  let inningScore = Math.floor(Math.random() * 3);
+  return inningScore;
 }
+
 console.log(inning());
 
 
